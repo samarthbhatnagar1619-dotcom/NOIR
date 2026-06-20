@@ -102,7 +102,7 @@ export default function Noir() {
     rx = mx,
     ry = my,
     raf: number | null = null;
-    const onMove = (e) => {
+    const onMove = (e: MouseEvent) => {
       mx = e.clientX; my = e.clientY;
       dot.style.transform = `translate(${mx}px,${my}px) translate(-50%,-50%)`;
       // cursor-parallax tilt of the persistent box, only while it's whole
