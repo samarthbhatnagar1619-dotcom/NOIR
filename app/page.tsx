@@ -31,7 +31,7 @@ const SWATCH = {
   marquina: "linear-gradient(135deg,#3a3733,#0b0a09 60%),radial-gradient(circle at 30% 30%,rgba(255,255,255,.4),transparent 35%)",
   onyx: "linear-gradient(135deg,#1a1816,#000)",
 };
-const fmt = (n) => "₹" + n.toLocaleString("en-IN");
+const fmt = (n: number) => "₹" + n.toLocaleString("en-IN");
 
 /* Lifestyle gallery.
    Drop your photos into  public/scenes/  with these exact filenames
