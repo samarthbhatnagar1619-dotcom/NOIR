@@ -97,7 +97,11 @@ export default function Noir() {
   useEffect(() => {
     if (window.matchMedia("(pointer:coarse)").matches) return;
     const dot = dotRef.current, ring = ringRef.current;
-    let mx = innerWidth / 2, my = innerHeight / 2, rx = mx, ry = my, raf;
+   let mx = innerWidth / 2,
+    my = innerHeight / 2,
+    rx = mx,
+    ry = my,
+    raf: number | null = null;
     const onMove = (e) => {
       mx = e.clientX; my = e.clientY;
       dot.style.transform = `translate(${mx}px,${my}px) translate(-50%,-50%)`;
